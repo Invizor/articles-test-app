@@ -1,0 +1,74 @@
+.article-view {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	.title {
+		text-align: center;
+		font-size: 20px;
+		color: #336699;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	.description {
+		padding: 10px 30px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.comments {
+		.title-comments {
+			font-size: 18px;
+			color: #336699;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+		.comments-list {
+			padding: 10px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			.comment {
+				margin-bottom: 20px;
+				display: inline-flex;
+				.content {
+					display: inline-flex;
+					padding: 5px;
+					background: #336699;
+					border-radius: 5px;
+					color: #ffffff;
+				}
+			}
+		}
+		.block-add-comment {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			padding: 10px 30px;
+			.comment-area {
+				width: 100%;
+				border: 2px #336699 dotted;
+				border-radius: 10px;
+				height: 58px;
+				padding: 10px;
+				resize: none;
+				outline: none;
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+			.add-btn {
+				width: 200px;
+				height: 44px;
+				background: #336699;
+				color: #ffffff;
+				cursor: pointer;
+				border: 0px;
+				border-radius: 5px;
+				font-size: 16px;
+			}
+			.add-btn:hover {
+				background: #1f5387;
+			}
+		}
+	}
+}
